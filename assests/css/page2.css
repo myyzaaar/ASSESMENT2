@@ -1,0 +1,98 @@
+/* page2.css - Styles specific to the registration page */
+
+.registration-title {
+    color: var(--text-gray);
+    font-size: 28px;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.instruction-text {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.date-inputs input {
+    flex: 1;
+    text-align: center;
+}
+
+.hint-text {
+    color: var(--mulah-orange);
+    font-size: 12px;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Input validation styles */
+input:invalid {
+    border-color: #ff6b6b;
+}
+
+input:focus:invalid {
+    outline-color: #ff6b6b;
+}
+
+/* Disable email input when checkbox is checked */
+input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Field completion animation */
+@keyframes completedField {
+    0% { background-color: rgba(76, 175, 80, 0.1); }
+    100% { background-color: transparent; }
+}
+
+.field-completed {
+    animation: completedField 1s ease-out;
+}
+
+/* Continue button placement */
+.continue-button {
+    margin-top: 30px;
+}

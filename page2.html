@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulah - Registration</title>
+    <link rel="stylesheet" href="assests/css/main.css">
+    <link rel="stylesheet" href="assests/css/page2.css">
+</head>
+<body>
+    <div class="logo">MULAH</div>
+    
+    <div class="container">
+        <h2 class="registration-title">Registration</h2>
+        <p class="instruction-text">Please fill up your details.</p>
+        
+        <div class="form-container">
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                    <p class="hint-text">*Please insert a name.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthday">Birthday</label>
+                    <div class="date-inputs">
+                        <input type="text" id="day" placeholder="DD" maxlength="2">
+                        <input type="text" id="month" placeholder="MM" maxlength="2">
+                        <input type="text" id="year" placeholder="YYYY" maxlength="4">
+                    </div>
+                    <p class="hint-text">*Please insert your birthday.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <p class="hint-text">*Please insert a valid email address.</p>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="noEmail">
+                        <label for="noEmail">No email address</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="button continue-button">Continue</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Powered by <span>MulahRewards.com</span>
+    </div>
+    
+    <script src="assests/js/main.js"></script>
+    <script src="assests/js/page2.js"></script>
+</body>
+</html>

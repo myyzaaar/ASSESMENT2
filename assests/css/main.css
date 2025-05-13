@@ -1,0 +1,116 @@
+/* main.css - Common styles across all pages */
+
+:root {
+    /* Color Variables */
+    --mulah-orange: #E08F3E;
+    --text-gray: #888;
+    --light-gray: #f9f9f9;
+    --border-gray: #ccc;
+    --footer-gray: #aaa;
+    --dark-text: #333;
+    --success-green: #4CAF50;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    color: var(--mulah-orange);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+.footer {
+    color: var(--footer-gray);
+    font-size: 12px;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+
+.footer span {
+    color: #666;
+}
+
+/* Common Button Styles */
+.button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--mulah-orange);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #d08030;
+}
+
+.secondary-button {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+.secondary-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Form Elements */
+input {
+    padding: 12px;
+    border: 1px solid var(--border-gray);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid var(--mulah-orange);
+    border-color: transparent;
+}
+
+/* Container for main content */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+/* Responsiveness */
+@media (max-height: 700px) {
+    .logo {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+    
+    .footer {
+        padding: 10px 0;
+    }
+}
